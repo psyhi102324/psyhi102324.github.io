@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Harry Beast Display';
+    src: url(/res/fonts/harry-beast/HarryBeastDisplay-Regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Harry Beast Standard';
+    src: url(/res/fonts/harry-beast/HarryBeastStandard-Regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url(/res/fonts/sofia-pro/normal_normal_300.woff2) format('woff2'),
+        url(/res/fonts/sofia-pro/normal_normal_400.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Harry Potter Font';
+    src: url(/res/fonts/harry-p-font/HarryP-MVZ6w.ttf) format('truetype');
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Sofia Pro', Helvetica, sans-serif;
+}
+
+header {
+    display: contents;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.nav-wrapper,
+.page-footer {
+    background-color: #00001b;
+}
+
+.brand-logo>img {
+    width: 24px;
+    height: 24px;
+}
+
+.platforms {
+    display: flex;
+    justify-content: space-around;
+}
+
+.platforms a>i.fa-brands {
+    font-size: 24px;
+}
+
+.legal-disclaimers {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.legal-disclaimers a {
+    color: #fff;
+    font-weight: bold;
+}
+
+
+h2,
+h3 {
+    font-family: 'Harry Beast Display';
+}
+
+.title-wrapper {
+    background-color: #000;
+}
+
+.nav-links a {
+    display: flex;
+    gap: .2rem;
+}
+
+.page-footer>.container {
+    border: 1px solid #696b78;
+    padding: 1rem;
+}
+
+#harry-potter-wordmark {
+    max-width: 140px;
+}
+
+.harry-beast-r {
+    font-family: 'Harry Beast Standard';
+}
+
+.slider .indicators .indicator-item.active {
+    background-color: #00001b;
+}
+
+.seperator-flourish {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+.seperator-hr {
+    border-bottom: 1px solid #757575;
+    opacity: .26;
+    flex: 1 1;
+}
+
+.seperator-flourish img {
+    margin: 0 10px 20px;
+}
+
+@media only screen and (width <=400px) {
+    .legal-disclaimers {
+        flex-direction: column;
+    }
+}

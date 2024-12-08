@@ -120,6 +120,18 @@ h3 {
     margin: 0 10px 20px;
 }
 
+.film-img-container>img {
+    width: 200px;
+}
+
+.film-description {
+    height: 100%;
+}
+
+.film-img {
+    width: 400px;
+}
+
 @media only screen and (width <=400px) {
     .legal-disclaimers {
         flex-direction: column;

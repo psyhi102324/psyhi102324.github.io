@@ -8,11 +8,16 @@ document.addEventListener('DOMContentLoaded', function () {
         coverTrigger: false,
     });
     const slider = document.querySelectorAll('.slider');
-    M.Slider.init(slider, {
-        indicators: false,
-    });
+    M.Slider.init(slider);
     const scrollspy = document.querySelectorAll('.scrollspy');
     M.ScrollSpy.init(scrollspy);
     const carousel = document.querySelectorAll('.carousel');
     M.Carousel.init(carousel);
+    const fixedBtn = document.querySelectorAll('.fixed-action-btn');
+    M.FloatingActionButton.init(fixedBtn, {
+        direction: 'left',
+        hoverEnabled: false,
+    });
+    const materialbox = document.querySelectorAll('.materialboxed');
+    M.Materialbox.init(materialbox);
 });
